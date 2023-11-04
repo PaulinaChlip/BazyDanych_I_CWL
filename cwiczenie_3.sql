@@ -97,4 +97,3 @@ ADD kwota_netto money;
 
 UPDATE rozliczenia.pensje
 SET kwota_netto=kwota_brutto*0.7;
-*/
