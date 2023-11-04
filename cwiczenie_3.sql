@@ -1,4 +1,4 @@
-/*
+
 CREATE SCHEMA rozliczenia;
 
 CREATE TABLE rozliczenia.pracownicy(
