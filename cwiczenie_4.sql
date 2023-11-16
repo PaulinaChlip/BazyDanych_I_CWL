@@ -1,4 +1,4 @@
-/*CREATE SCHEMA ksiegowosc; 
+CREATE SCHEMA ksiegowosc; 
 
 CREATE TABLE ksiegowosc.pracownicy(
 	id_pracownika SERIAL PRIMARY KEY NOT NULL,
@@ -196,4 +196,4 @@ GROUP BY kpen.stanowisko;
 --ppkt p)
 DELETE FROM ksiegowosc.pracownicy kprac USING ksiegowosc.wynagrodzenia kw, ksiegowosc.pensje kpen
 WHERE kw.id_pracownika=kprac.id_pracownika AND kw.id_pensji=kpen.id_pensji AND kpen.kwota<money(1200)
-*/
+
