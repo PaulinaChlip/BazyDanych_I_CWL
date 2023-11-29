@@ -1,0 +1,27 @@
+Bazy danych-zależności funkcyjne
+
+1.zamowienia(id_produktu, nazwa_produktu,id_klienta,nazwa_klienta,data_zamowienia,
+	cena_produktu, ilosc, VAT, suma_brutto, suma_netto)
+A)
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+id_klienta -> nazwa_klienta
+suma_netto, VAT-> suma_brutto
+cena_produktu, ilość -> suma_netto
+id_produktu <-> nazwa_produktu
+id_klienta <-> nazwa_klienta
+
+B)
+klucze kandydujące:
+id_produtu, id_klienta, nazwa_klienta, nazwa_produktu
+
+2.pomieszczenia(id_pomieszczenia, numer_pomieszczenia, id_budynku, powierzchnia,
+	liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy)
+A)
+id_budynku -> powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy
+kod_pocztowy -> miasto
+id_pomieszczenia -> id_budynku
+numer_pomieszczenia, id_budynku -> id_pomieszczenia
+
+B)
+klucze kandydujące:
+id_pomieszczenia
